@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook logIn</title>
+   
+</head>
+<style>
+    body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 55em;
+    background: #eff1f4;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: -7px;
+    flex-wrap: wrap;
+
+}
+
+.facebook-module {
+    width: 500px;
+    height: 300px;
+
+    margin-left: 70px;
+    margin-top: -200px
+}
+
+.facebook-module p {
+    color: black;
+    font-size: 25px;
+    margin-top: -20px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.facebook-module h1 {
+    font-size: 60px;
+    color: #1877f2;
+    font-weight: 700;
+
+}
+
+
+
+.login-box {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+
+
+#phone {
+    height: 50px;
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #dddfe2;
+
+}
+
+#password {
+    height: 50px;
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #dddfe2;
+}
+
+#login-btn {
+    height: 40px;
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+#form {
+    border: 1px solid #dddfe2;
+    background-color: white;
+    width: 350px;
+    height: 280px;
+    margin-right: 170px;
+    border-radius: 7px;
+    padding: 30px
+}
+
+#forgot {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #0263e2;
+}
+
+#list {
+    list-style: none;
+
+}
+
+#newacc-btn {
+    background-color: #42b72a;
+    color: white;
+    margin-left: 60px;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    padding: 17px 318px;
+}
+
+.language li {
+    display: inline-block;
+    list-style: none;
+
+
+}
+
+.footer-options li {
+    display: inline-block;
+    list-style: none;
+
+
+}
+
+.language li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+.footer-options li a {
+    text-decoration: none;
+    color: #8a8d91;
+
+}
+
+.footer-language {
+    height: 40px;
+
+    font-size: 12px;
+    word-spacing: 20px
+}
+
+.footer-options {
+    height: 40px;
+    line-height: 2;
+    font-size: 12px;
+    word-spacing: 20px
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 37em;
+        height: 700px;
+        background: #eff1f4;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -7px;
+        flex-wrap: wrap;
+
+    }
+
+    .facebook-module {
+        margin-top: auto;
+        margin-right: 8rem;
+    }
+
+    .footer {
+        padding: 0px;
+        width: 37rem;
+    }
+}
+
+@media (max-width:1350px) and (min-width:600px) {
+    .container {
+        width: 100vw;
+        height: 700px;
+        background: #eff1f4;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -7px;
+        flex-wrap: wrap;
+
+    }
+
+    .facebook-module {
+        margin-top: auto;
+        margin-right: 8rem;
+    }
+
+    .footer {
+        padding: 0px;
+
+    }
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="facebook-module">
+
+
+            <h1>
+                facebook
+            </h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+
+        </div>
+        <div class="login-box">
+
+
+            <form action="" id="form">
+                <input type="email" name="" id="phone" placeholder="Email address or phone number"><br>
+                <input type="password" name="" id="password" placeholder="Password"><br>
+                <button type="submit" id="login-btn">Log In</button>
+
+                <ul>
+                    <li id="list"><a href="#" id="forgot">Forgotten password?</a></li>
+                </ul>
+                <hr>
+                <button id="newacc-btn">Create New Account</button>
+
+            </form>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-language">
+            <ul class="language">
+                <li><a href="#"> English (UK)</a></li>
+                <li><a href="#"> हिन्दी</a></li>
+                <li><a href="#">ਪੰਜਾਬੀ</a></li>
+                <li><a href="#">ردو</a></li>
+                <li><a href="#">ગુજરાતી</a></li>
+                <li><a href="#">मराठी</a></li>
+                <li><a href="#">বাংলা</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">తెలుగు</a></li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+            </ul>
+
+
+        </div>
+
+
+        <div class="footer-options">
+            <ul>
+                <hr>
+                <li><a href="#">SignUp</a></li>
+                <li><a href="#">LogIn</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#"> Watch</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayOculus</a></li>
+                <li><a href="#">Porta</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Bulletin</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Fundraisers</a></li>
+                <li><a href="#">ServicesVoting</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">CentreGroups</a></li>
+                <li><a href="#">AboutCreate</a></li>
+                <li><a href="#">adCreate</a></li>
+                <li><a href="#">PageDevelopers</a></li>
+                <li><a href="#">CookiesAdChoices</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Activity log</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
